@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+
+  <title>행정구역 select 샘플</title>
+  <meta name="description" content="행정구역 select 샘플">
+  <meta name="author" content="namumap">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./typeahead.bundle.js"></script>
+  <script src="./scripts.js"></script>
+  <style>
+    .twitter-typeahead {
+      width: 100%;
+    }
+
+    .tt-menu {
+      z-index: 100;
+      max-height: 240px;
+      overflow-y: auto;
+      background-color: #fff;
+      margin-top: 3px;
+      border-radius: 3px;
+      width: 100%;
+      box-shadow: 0 0 3px #666;
+      padding-bottom: 6px;
+    }
+    
+    .tt-menu .tt-suggestion {
+      padding: 5px 10px;
+      text-align: left;
+      font-size: 16px !important;
+      color: #464a4c;
+    }
+    
+    .tt-menu .tt-suggestion.tt-cursor {
+      background-color: #ccc;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-5">
+        <h3 class="my-3">1) typeahead.js 읍면동 검색 샘플</h3>
+        <input type="text" id="search-area" class="form-control typeahead", placeholder="읍면동 검색" />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 my-3">
+        <dl class="row">
+          <dt class="col-sm-4 col-md-3 text-left text-md-right text-lg-right">선택결과:</dt>
+          <dd class="col-sm-8 col-md-9 " id="result-typeahead">
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 my-3">
+        <ul>
+          <li><a href="https://twitter.github.io/typeahead.js/" target="_blank">twitter typeahead.js</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-6 my-5 py-5">
+        <hr />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
